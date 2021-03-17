@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #070601;
+    text-align: left;
+}
+
+html, body{
+    background-color:#37ff9b;
+}
+
+div{
+    background-color: rgba(255, 238, 0, 0.822);
+}
+
+h1, h2{
+    text-align: center;
+}
+
+legend{
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+@keyframes animation_test{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: rgb(22, 33, 187);
+    }
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes label-animation{
+    from{
+        transform: rotate(0deg);
+        margin-left: 0;
+    }
+    to{
+        transform: rotate(180deg);
+        margin-left: 85vw;
+    }
+}
+
+.loader{
+    width: 64px;
+    height: 64px;
+    border: 5px solid rgb(190, 45, 160);
+    border-top: 5px solid rgb(10, 20, 100);
+    border-radius: 50%;
+    animation: girar 2s linear infinite;
+
+}
+
+.loader-double{
+    width: 64px;
+    height: 64px;
+    border: 16px solid rgb(17, 233, 53);
+    border-top: 16px solid rgb(10, 20, 100);
+    border-bottom: 16px solid rgb(90, 10, 10);
+    border-radius: 50%;
+    animation: girar 2s ease-in-out infinite;
+
+}
+
+.animda{
+    width: 100%;
+    background-color: red;
+    color:white;
+    text-align: center;
+    height: 200px;
+    justify-content: center;
+    
+    align-items: center;
+    animation-name: animation_test;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
